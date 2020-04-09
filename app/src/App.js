@@ -8,7 +8,7 @@ import {
 import './css/index.css';
 import Header from './components/Header.js';
 import Quote from './components/Quote.js';
-import Photos from './components/Photos.js';
+import PhotoContainer from './components/PhotoContainer.js';
 import NotFound from './components/NotFound.js';
 
 const App = () => (
@@ -17,7 +17,7 @@ const App = () => (
       <Header />
       <Switch>
         <Route exact path="/" component={ Quote }/>
-        <Route exact path="/:search" component={ Photos } />
+        <Route exact path="/:search" component={ PhotoContainer } />
         <Route component={ NotFound } />
       </Switch>
     </div>

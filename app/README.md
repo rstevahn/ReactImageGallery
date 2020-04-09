@@ -6,4 +6,4 @@ Extra Credit features included:
 - friendly error message when there are no search results
 - friendly 404 error handling
 
-This project uses React and Axios to implement a Flickr Image Search App.
+This project uses React, JSX and Axios to implement a Flickr Image Search App.
