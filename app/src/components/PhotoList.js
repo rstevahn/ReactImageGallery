@@ -1,25 +1,23 @@
 // jshint esversion: 9
 import React from 'react';
 import Photo from './Photo.js';
-import NotFound from './NotFound.js';
+import NoResults from './NoResults.js';
 
 const PhotoList = props => {
-  console.log("PhotoList props: " + props);
-  debugger;
   const results = props.data;
-  const {farm, server, id, secret, title} = results;
   let photos;
   if (results.length) { // success
-    photos = results.map(photo => <Photo url={`https://farm${farm}.staticflickr.com/${server}/${id}_${secret}.jpg`}
-                                          alt={`${title}`}
-                                          key={id} />);
+    photos = results.map(photo => 
+      <Photo url={`https://farm${photo.farm}.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}.jpg`}
+              alt={`${photo.title}`}
+              key={photo.id} />);
   } else {
-    photos = <NotFound />
+    photos = <NoResults />
   }
 
   return(
     <div className="photo-container">
-      <h2>Results</h2>
+      <h2>Results for {props.search}</h2>
       <ul>
         {photos}
       </ul>
