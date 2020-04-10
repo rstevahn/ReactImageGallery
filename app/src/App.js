@@ -5,7 +5,7 @@ import {
   Route,
   Switch
 } from 'react-router-dom';
-// import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet';
 import './css/index.css';
 import Header from './components/Header.js';
 import Quote from './components/Quote.js';
@@ -17,9 +17,9 @@ import NotFound from './components/NotFound.js';
 const App = () => (
   <BrowserRouter>
     <div className="container">
-      {/*<Helmet>
+      <Helmet>
         <title>Flickr Search</title>
-      </Helmet>*/}
+      </Helmet>
       <Header />
       <Switch>
         <Route exact path="/" component={ Quote }/>                   {/* home page */}
