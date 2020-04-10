@@ -3,8 +3,13 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { withRouter } from 'react-router-dom';
 
+// our search form
+
 class MySearch extends Component {
     static propTypes = { history: PropTypes.object.isRequired };
+
+// when the form is submitted, we programatically set the search location,
+// causing new search results to be fetched and displayed
 
     handleSubmit = (e) => {
         e.preventDefault();
@@ -13,6 +18,7 @@ class MySearch extends Component {
         const path = `/${search}`;
         this.props.history.push(path);
     }
+ // a simple search form with a cute SVG magnifying glass
     
     render() {
         return (
@@ -28,7 +34,7 @@ class MySearch extends Component {
         );
     };
 }
-// eslint-disable-next-line
+
 const Search = withRouter(MySearch);
 
 export default Search;

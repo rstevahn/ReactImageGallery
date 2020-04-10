@@ -2,6 +2,8 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
+// the Nav links simply reroute to a simple search URL
+
 const Nav = () => (
     <nav className="main-nav">
         <ul>

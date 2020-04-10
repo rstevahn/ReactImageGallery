@@ -1,6 +1,8 @@
 // jshint esversion: 9
 import React from 'react';
 
+// This quote will be displayed on our home page in the location where the search results will appear
+
 const Quote = () => (
     <div>
         <p>Well she's walking through the clouds<br />

@@ -1,10 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@0,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&display=swap');
+
 body {
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Averia Serif Libre', cursive;
   color: #3f4850;
+  background-color: lightblue;
+}
+
+h1 {
+  font-family: 'Averia Sans Libre', sans-serif;  
 }
 
 h2 {
+  font-family: 'Averia Sans Libre', sans-serif;
   font-size: 2em;
   margin: 52px 0 40px;
   text-transform: capitalize;
