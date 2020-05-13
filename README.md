@@ -1,6 +1,8 @@
 # Robert's Flickr Image Search App
 ### Project 7, Treehouse Full Stack JavaScript Techdegree
 
+This project is deployed here: https://rstevahn-flickr-search.netlify.com
+
 Extra Credit features included:
 - loading indicator
 - friendly error message when there are no search results
